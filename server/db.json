@@ -1,5 +1,12 @@
 {
   "profiles": [
-
+    {
+      "firstName": "John Faber",
+      "lastName": "Flórez Vasco",
+      "email": "john.florez@live.com",
+      "jobTitle": "FrontEnd Developer",
+      "twitter": "john_florez",
+      "id": 1
+    }
   ]
 }

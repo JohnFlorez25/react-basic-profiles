@@ -30,7 +30,7 @@ class ProfileDetailContainer extends Component {
 
     axios
       .get(
-        `http://localhost:5700/profiles/${this.props.match.params.id}`,
+        `https://api-profiles-ag.now.sh/profiles/${this.props.match.params.id}`,
         { cancelToken: this.axiosCancelSource.token }
       )
       .then(res => {
@@ -65,7 +65,7 @@ class ProfileDetailContainer extends Component {
 
     axios
       .delete(
-        `http://localhost:5700/profiles/${this.props.match.params.id}`,
+        `https://api-profiles-ag.now.sh/profiles/${this.props.match.params.id}`,
         { cancelToken: this.axiosCancelSource.token }
       )
       .then(res => {

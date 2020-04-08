@@ -29,7 +29,7 @@ class ProfileNew extends React.Component {
 
     handleSubmit = e => {
         e.preventDefault();
-        axios.post('http://localhost:5700/profiles', this.state.form)
+        axios.post('https://api-profiles-ag.now.sh/profiles', this.state.form)
         .then(profile => this.setState({
             loading: false,
             }),

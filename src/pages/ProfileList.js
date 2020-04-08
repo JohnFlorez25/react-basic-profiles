@@ -34,7 +34,7 @@ class ProfileList extends React.Component {
 
         this.axiosCancelSource = axios.CancelToken.source()
         
-        axios.get('http://localhost:5700/profiles',
+        axios.get('https://api-profiles-ag.now.sh/profiles',
         { cancelToken: this.axiosCancelSource.token })
         .then(res =>{
             this.setState({

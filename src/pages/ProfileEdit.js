@@ -33,7 +33,7 @@ class ProfileEdit extends React.Component {
 
         this.axiosCancelSource = axios.CancelToken.source()
         
-        axios.get(`http://localhost:5700/profiles/${this.props.match.params.id}`,
+        axios.get(`https://api-profiles-ag.now.sh/profiles/${this.props.match.params.id}`,
         { cancelToken: this.axiosCancelSource.token })
         .then(res =>{
             this.setState({
@@ -59,7 +59,7 @@ class ProfileEdit extends React.Component {
 
     handleSubmit = e => {
         e.preventDefault();
-        axios.put(`http://localhost:5700/api/profiles/${this.props.match.params.id}`, this.state.form)
+        axios.put(`https://api-profiles-ag.now.sh/profiles/${this.props.match.params.id}`, this.state.form)
         .then(profile => this.setState({
             loading: false,
         }))
